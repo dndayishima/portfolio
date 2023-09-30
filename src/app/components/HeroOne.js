@@ -63,7 +63,7 @@ export default function HeroOne() {
                   Me contacter
                 </Link>
                 <Link
-                  href=""
+                  href="/static/CV_NDAYISHIMA_DIVIN.pdf"
                   className="btn bg-amber-500/10 hover:bg-amber-500 border-amber-500/10 hover:border-amber-500 text-amber-500 hover:text-white rounded-md ms-1"
                 >
                   Télécharger mon CV
