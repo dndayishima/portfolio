@@ -33,7 +33,7 @@ export default function Index() {
       {/*<Projects /> à remettre */}
       {/*<Clients />*/}
       {/*<Blogs />*/}
-      {/*<GetInTouch /> à remettre */}
+      <GetInTouch />
       {/*<Footer />*/}
       <Switcher />
     </>
