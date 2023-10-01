@@ -180,7 +180,7 @@ export default function Navbar() {
                 Blog
               </Link1>
             </li>*/}
-            {/*<li className="nav-item">
+            <li className="nav-item">
               <Link1
                 to="contact"
                 activeClass="active"
@@ -191,7 +191,7 @@ export default function Navbar() {
               >
                 Me contacter
               </Link1>
-            </li> à remettre */}
+            </li>
           </ul>
         </div>
       </div>

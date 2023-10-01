@@ -7,14 +7,20 @@ export default function GetInTouch() {
   async function handleOnSubmit(e) {
     e.preventDefault();
     const formData = {};
+
     Array.from(e.currentTarget.elements).forEach((field) => {
       if (!field.name) {
         return;
       }
       formData[field.name] = field.value;
-      console.log(formData);
+    });
+
+    await fetch("/api/send-email", {
+      method: "post",
+      body: JSON.stringify(formData),
     });
   }
+
   return (
     <section
       className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800"
@@ -23,13 +29,13 @@ export default function GetInTouch() {
       <div className="container">
         <div className="grid grid-cols-1 pb-8 text-center">
           <h3 className="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">
-            Get In Touch !
+            Rentrons en contact
           </h3>
 
-          <p className="text-slate-400 max-w-xl mx-auto text-[15px]">
+          {/*<p className="text-slate-400 max-w-xl mx-auto text-[15px]">
             Obviously I am a Web Designer. Web Developer with over 7 years of
             experience. Experienced with all stages of the development.
-          </p>
+          </p>*/}
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 md:grid-cols-2 mt-8 items-center gap-[30px]">
@@ -43,7 +49,7 @@ export default function GetInTouch() {
                       id="name"
                       type="text"
                       className="form-input w-full py-2 px-3 border border-inherit dark:border-gray-800 dark:bg-slate-900 dark:text-slate-200 rounded h-10 outline-none bg-transparent focus:border-amber-500/50 dark:focus:border-amber-500/50 focus:shadow-none focus:ring-0 text-[15px]"
-                      placeholder="Name :"
+                      placeholder="Nom :"
                     />
                   </div>
 
@@ -64,14 +70,14 @@ export default function GetInTouch() {
                       name="subject"
                       id="subject"
                       className="form-input w-full py-2 px-3 border border-inherit dark:border-gray-800 dark:bg-slate-900 dark:text-slate-200 rounded h-10 outline-none bg-transparent focus:border-amber-500/50 dark:focus:border-amber-500/50 focus:shadow-none focus:ring-0 text-[15px]"
-                      placeholder="Subject :"
+                      placeholder="Objet :"
                     />
                   </div>
 
                   <div className="mb-5">
                     <textarea
-                      name="comments"
-                      id="comments"
+                      name="message"
+                      id="message"
                       className="form-input w-full py-2 px-3 border border-inherit dark:border-gray-800 dark:bg-slate-900 dark:text-slate-200 rounded h-28 outline-none bg-transparent focus:border-amber-500/50 dark:focus:border-amber-500/50 focus:shadow-none focus:ring-0 text-[15px]"
                       placeholder="Message :"
                     ></textarea>
@@ -80,10 +86,9 @@ export default function GetInTouch() {
                 <button
                   type="submit"
                   id="submit"
-                  name="send"
                   className="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white rounded-md h-11 justify-center flex items-center"
                 >
-                  Send Message
+                  Envoyer
                 </button>
               </form>
             </div>
@@ -98,13 +103,13 @@ export default function GetInTouch() {
 
                 <div className="flex-1 ms-6">
                   <h5 className="text-[17px] dark:text-white mb-2 font-medium">
-                    Phone
+                    Téléphone
                   </h5>
                   <Link
-                    href="tel:+152534-468-854"
+                    href="tel:+33603697507"
                     className="text-slate-400 text-[15px]"
                   >
-                    +152 534-468-854
+                    +33 6 03 69 75 07
                   </Link>
                 </div>
               </div>
@@ -119,10 +124,10 @@ export default function GetInTouch() {
                     Email
                   </h5>
                   <Link
-                    href="mailto:contact@example.com"
+                    href="mailto:divin.ndayishima@outlook.com"
                     className="text-slate-400 text-[15px]"
                   >
-                    contact@example.com
+                    divin.ndayishima@outlook.com
                   </Link>
                 </div>
               </div>
@@ -134,10 +139,10 @@ export default function GetInTouch() {
 
                 <div className="flex-1 ms-6">
                   <h5 className="text-[17px] dark:text-white mb-2 font-medium">
-                    Location
+                    Localisation
                   </h5>
                   <p className="text-slate-400 text-[15px] mb-2">
-                    C/54 Northwest Freeway, Suite 558, Houston, USA 485
+                    Paris, FRANCE
                   </p>
                 </div>
               </div>

@@ -1,13 +1,30 @@
 import { NextResponse } from "next/server";
 
-// To handle a GET request to /api
-export async function GET(request) {
-  // Do whatever you want
-  return NextResponse.json({ message: "OK" }, { status: 200 });
-}
+const mail = require("@sendgrid/mail");
 
-// To handle a POST request to /api
+mail.setApiKey(process.env.SENDGRID_API_KEY || "");
+
+const EMAIL_FROM = process.env.EMAIL_FROM || "";
+const EMAIL_TO = process.env.EMAIL_TO || "";
+
 export async function POST(request) {
-  // Do whatever you want
+  const body = await request.json();
+
+  const message = `
+    Nom : ${body.name}\r\n
+    Email : ${body.email}\r\n
+    message : \r\n${body.message.replace(/\n/g, "<br />")}
+  `;
+
+  const data = {
+    to: EMAIL_TO,
+    from: EMAIL_FROM,
+    subject: body.subject,
+    text: message,
+    html: message.replace(/\r\n/g, "<br /><br />"),
+  };
+
+  mail.send(data);
+
   return NextResponse.json({ message: "OK" }, { status: 200 });
 }
