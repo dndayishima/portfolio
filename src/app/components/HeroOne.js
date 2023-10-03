@@ -2,8 +2,8 @@
 import React from "react";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
-import CountUp from "react-countup";
-import Image from "next/image";
+//import CountUp from "react-countup";
+//import Image from "next/image";
 
 export default function HeroOne() {
   return (
@@ -16,7 +16,7 @@ export default function HeroOne() {
         <div className="container">
           <div className="grid md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
             <div>
-              <h4 className="font-bold lg:text-[40px] text-3xl lg:leading-normal leading-normal mb-4">
+              <h4 className="font-bold lg:text-[40px] text-2xl lg:leading-normal leading-normal mb-4">
                 Hello ! Je suis <br />
                 <TypeAnimation
                   sequence={[
@@ -58,7 +58,8 @@ export default function HeroOne() {
               <div className="mt-6">
                 <Link
                   href="#contact"
-                  className="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white rounded-md"
+                  className="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white rounded-md ms-1"
+                  style={{ marginTop: "10px" }}
                 >
                   Me contacter
                 </Link>
@@ -66,6 +67,7 @@ export default function HeroOne() {
                   href="/static/CV_NDAYISHIMA_DIVIN.pdf"
                   target="_blank"
                   className="btn bg-amber-500/10 hover:bg-amber-500 border-amber-500/10 hover:border-amber-500 text-amber-500 hover:text-white rounded-md ms-1"
+                  style={{ marginTop: "10px" }}
                 >
                   Télécharger mon CV
                 </Link>

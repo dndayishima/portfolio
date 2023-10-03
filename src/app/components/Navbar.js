@@ -90,7 +90,7 @@ export default function Navbar() {
             </li>
           </ul>
           {/* <!-- Navbar Collapse Manu Button --> */}
-          <button
+          {/*<button
             data-collapse="menu-collapse"
             type="button"
             className="collapse-btn inline-flex items-center ms-2 text-dark dark:text-white lg_992:hidden"
@@ -99,7 +99,7 @@ export default function Navbar() {
           >
             <span className="sr-only">Navigation Menu</span>
             <i className="mdi mdi-menu text-[24px]"></i>
-          </button>
+          </button>*/}
         </div>
 
         {/* <!-- Navbar Manu --> */}
