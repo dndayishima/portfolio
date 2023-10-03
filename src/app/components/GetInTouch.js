@@ -1,9 +1,11 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import * as Unicons from "@iconscout/react-unicons";
 
 export default function GetInTouch() {
+  const [formStatus, setFormStatus] = useState(null);
+
   async function handleOnSubmit(e) {
     e.preventDefault();
     const formData = {};
@@ -18,24 +20,32 @@ export default function GetInTouch() {
     await fetch("/api/send-email", {
       method: "post",
       body: JSON.stringify(formData),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }).then((response) => {
+      if (response.ok) {
+        setFormStatus("EMAIL_SENT");
+      } else {
+        console.log(response);
+        setFormStatus("ERROR_OCCURED");
+      }
     });
   }
 
   return (
-    <section
-      className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800"
-      id="contact"
-    >
+    <section className="relative md:py-24 py-16" id="contact">
       <div className="container">
         <div className="grid grid-cols-1 pb-8 text-center">
           <h3 className="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">
             Rentrons en contact
           </h3>
 
-          {/*<p className="text-slate-400 max-w-xl mx-auto text-[15px]">
-            Obviously I am a Web Designer. Web Developer with over 7 years of
-            experience. Experienced with all stages of the development.
-          </p>*/}
+          <p className="text-slate-400 max-w-xl mx-auto text-[15px]">
+            N'hésitez pas à me contacter pour discuter de votre projet ou pour
+            toute autre question. Je suis toujours prêt à échanger et à
+            collaborer.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 md:grid-cols-2 mt-8 items-center gap-[30px]">
@@ -83,6 +93,22 @@ export default function GetInTouch() {
                     ></textarea>
                   </div>
                 </div>
+
+                {formStatus && (
+                  <div className="grid grid-cols-1">
+                    <span
+                      style={{
+                        paddingBottom: 20,
+                        color: formStatus === "EMAIL_SENT" ? "green" : "red",
+                      }}
+                    >
+                      {formStatus === "EMAIL_SENT"
+                        ? "Votre mail a été envoyé !"
+                        : "Une erreur est survenu, veuillez réessayer plus tard !"}
+                    </span>
+                  </div>
+                )}
+
                 <button
                   type="submit"
                   id="submit"

@@ -24,7 +24,12 @@ export async function POST(request) {
     html: message.replace(/\r\n/g, "<br /><br />"),
   };
 
-  mail.send(data);
+  try {
+    await mail.send(data);
+  } catch (error) {
+    console.error(error);
+    return NextResponse.json({ message: "ERROR OCCURRED" }, { status: 419 });
+  }
 
   return NextResponse.json({ message: "OK" }, { status: 200 });
 }
