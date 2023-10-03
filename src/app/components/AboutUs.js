@@ -14,7 +14,7 @@ export default function AboutUs() {
             <div className="relative">
               <div className="absolute inset-0 border dark:border-gray-800 rounded-full -mt-[10px] -ms-3 h-[100%] w-[100%] -z-1"></div>
               <Image
-                src="/images/ab2.jpg"
+                src="/images/hero/hero-image-3.png"
                 alt=""
                 height={0}
                 width={0}
