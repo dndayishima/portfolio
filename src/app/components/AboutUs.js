@@ -50,18 +50,20 @@ export default function AboutUs() {
               </h3>
 
               <p className="text-slate-400 max-w-xl text-[15px]">
-                Je suis un développeur JavaScript doté d'une expertise robuste
-                en React, React Native et Next.js. Ma maîtrise de ces
-                technologies me permet de créer des interfaces réactives de haut
-                niveau. <br />
+                Je suis un développeur JavaScript / TypeScript doté d'une
+                expertise robuste en React.js, React Native et Next.js.
+                <br />
+                Ma maîtrise de ces technologies me permet de créer des
+                applications avec des interfaces graphiques d’un niveau avancé.{" "}
+                <br />
                 De plus, je possède des compétences avancées en Node.js et
                 Nest.js qui me donnent la possibilité de concevoir des APIs
                 hautement performantes.
               </p>
               <p className="text-slate-400 max-w-xl text-[15px] mt-6">
                 Mon parcours de plusieurs années dans le développement se
-                traduit par une capacité éprouvée à produire des résultats
-                exceptionnels.
+                traduit par une capacité éprouvée à produire des résultats plus
+                que satisfaisants.
                 <br />
                 Chaque projet est pour moi l'occasion de déployer des solutions
                 techniques pointues pour répondre aux besoins spécifiques.

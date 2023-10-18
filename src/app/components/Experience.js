@@ -57,18 +57,44 @@ export default function Experience() {
                     à R.A.S, un grand groupe d'intérim en France et au Maroc.
                   </p>
                   <p className="mt-3 mb-0 text-slate-400 text-[15px]">
+                    myR.A.S est une application qui est utilisée par les
+                    intérimaires pour effectuer un certain nombre d’opérations
+                    notamment :
+                  </p>
+                  <p className="mt-3 mb-0 text-slate-400 text-[15px]">
+                    - la mise à jour du profil d'un intérimaire
+                    <br />
+                    - le renseignement des absences / disponibilités
+                    <br />
+                    - la visualisation et téléchargement des bulletins de
+                    salaire <br />
+                    - la recherche et candidatures à des missions <br />
+                    - la signature des contrats <br />
+                  </p>
+                  <p className="mt-3 mb-0 text-slate-400 text-[15px]">
+                    L’objectif principal de ma mission était de contribuer à
+                    l’intégration d’un maximum de services ce qui permettrait
+                    aux intérimaires d’être totalement autonomes sans ce rendre
+                    dans leurs agences pour y effectuer des opérations.
+                  </p>
+                  <p className="mt-3 mb-0 text-slate-400 text-[15px]">
                     💼 Missions :
                   </p>
                   <p className="mt-3 mb-0 text-slate-400 text-[15px]">
-                    ✅ Développement mobile React Native
-                    <br />✅ Architecture, conception des APIs et de nouvelles
-                    fonctionnalités
-                    <br />✅ Réalisation des tests unitaires et end to end
+                    ✅ Développement mobile et évolution de l’application
+                    myR.A.S
+                    <br />✅ Architecture, conception des APIs et microservices
+                    pour les nouvelles fonctionnalités
+                    <br />✅ Mise en place des tests unitaires et end-to-end
+                    <br />✅ Mise en place du déploiement automatisé de
+                    l’application avec Microsoft AppCenter
                   </p>
                   <p className="mt-3 mb-0 text-slate-400 text-[15px]">
-                    👨‍💻 TypeScript, React Native, NestJS, MongoDB, Jest, Detox
+                    👨‍💻 TypeScript, React Native, Redux, Nest.js, MongoDB, Jest,
+                    Detox
                     <br />
-                    ⚙️ Gitlab CI/CD, Docker, AppCenter
+                    ⚙️ Gitlab CI/CD, Docker, Microsoft AppCenter, Amazon Web
+                    Services
                   </p>
                 </div>
               </div>
@@ -97,35 +123,40 @@ export default function Experience() {
 
                 <div className="ltr:float-left rtl:float-right text-start md:ms-8 mt-6 md:mt-0">
                   <h5 className="title mb-1 font-semibold">
-                    Développeur React / Gatsby
+                    Développeur React.js / Gatsby
                   </h5>
                   <p className="mt-3 mb-0 text-slate-400 text-[15px]">
                     HomeServe est un groupe spécialisé dans les services pour la
                     maison, notamment l’installation, l’assistance et le
                     dépannage, ainsi que les réparations dans les domaines de la
-                    plomberie, de l’électricité, du chauffage, du gaz, de
-                    l’électroménager et des objets connectés
+                    plomberie, de l'électricité, du chauffage, du gaz, de
+                    l’électroménager et des objets connectés.
                   </p>
                   <p className="mt-3 mb-0 text-slate-400 text-[15px]">
                     Je suis intervenu chez HomeServe en tant que Développeur
-                    React pour une mise en place d'une nouvelle application web,
-                    un nouveau tunnel d'achat.
+                    React.js / Gatsby pour une mise place d’une nouvelle
+                    application web, un nouveau tunnel d’achat et de signature
+                    de contrats.
+                    <br />
+                    Ce tunnel permettait aux clients d’effectuer des paiements
+                    et signatures de contrats suite aux démarchages
+                    téléphoniques des agents HomeServe.
                   </p>
                   <p className="mt-3 mb-0 text-slate-400 text-[15px]">
                     💼 Missions :
                   </p>
                   <p className="mt-3 mb-0 text-slate-400 text-[15px]">
-                    ✅ Développement front des tunnels de souscription aux
-                    contrats de prestations
-                    <br />✅ Maintien des espaces client existants
-                    <br />✅ Développement de nouveaux tunnels de vente suite à
-                    des évolutions législatives <br />✅ Réalisation des tests
-                    fonctionnels
+                    ✅ Développement d’un tunnel de souscription aux contrats de
+                    prestations
+                    <br />✅ Gestion des signatures de documents avec YouSign
+                    <br />✅ Mise en place des tests fonctionnels
+                    <br />✅ Mise en place d’un déploiement continu de la
+                    nouvelle application
                   </p>
                   <p className="mt-3 mb-0 text-slate-400 text-[15px]">
-                    👨‍💻 React JS, Gatsby, GraphQL, Prismic, Ava, Puppeteer
+                    👨‍💻 React.js, Gatsby, GraphQL, CMS Prismic, Ava, Puppeteer
                     <br />
-                    ⚙️ Jira, Git, Gitlab CI/CD, Docker
+                    ⚙️ Gitlab CI/CD, Docker, YouSign, Google Cloud Platform
                   </p>
                 </div>
               </div>
@@ -152,40 +183,42 @@ export default function Experience() {
 
                 <div className="ltr:float-left rtl:float-right text-start md:ms-8 mt-6 md:mt-0">
                   <h5 className="title mb-1 font-semibold">
-                    Développeur React / React Native / Next.js / Java Spring
+                    Développeur React.js / React Native / Next.js / Java Spring
                     Boot
                   </h5>
                   <p className="mt-3 mb-0 text-slate-400 text-[15px]">
-                    Un éditeur de portails spécialisés dans les bons plans
-                    shopping (CashBack, Flash Ticket, Bons d’achat en ligne et
-                    en magasin...).
+                    Plebicom est un éditeur de portails spécialisés dans les
+                    bons plans shopping (CashBack, Flash Ticket et Bons d’achat
+                    en ligne et en magasin).
                   </p>
                   <p className="mt-3 mb-0 text-slate-400 text-[15px]">
-                    Chez Plebicom je suis intervenu en tant que Développeur
-                    fullstack sur l'application eBuyClub qui est une plateforme
+                    Chez Plebicom, je suis intervenu en tant que Développeur
+                    fullstack sur l’application eBuyClub qui est une plateforme
                     qui propose de multiples catégories pour profiter des offres
                     de cashback : voyage, alimentation, maison, beauté, mode,
-                    etc. <br />
-                    J'intervenait egalement sur les applications marques
-                    blanches de Pleciom.
+                    etc.
+                    <br />
+                    J’intervenais également sur les applications marques
+                    blanches de Plebicom comme Hubside Reward Club, pour des
+                    évolutions et mises à jour.
                   </p>
                   <p className="mt-3 mb-0 text-slate-400 text-[15px]">
                     💼 Missions :
                   </p>
                   <p className="mt-3 mb-0 text-slate-400 text-[15px]">
-                    ✅ Développement Front-End et Mobile de la plateforme
-                    eBuyClub
-                    <br />✅ Développement Back-End des APIs de la plateforme
-                    eBuyClub
-                    <br />✅ Développement Mobile des applications marques
-                    blanches de Plebicom
+                    ✅ Développement web et mobile de nouvelles fonctionnalités
+                    sur eBuyClub et Hubside Reward Club
+                    <br />✅ Développement orienté performances
+                    <br />✅ Architecture, conception des APIs et microservices
+                    <br />✅ Mise en place d’un déploiement continu de
+                    l’application web d’eBuyClub
                   </p>
                   <p className="mt-3 mb-0 text-slate-400 text-[15px]">
-                    👨‍💻 JavaScript, React JS, React Native, Next JS, Java Spring
-                    Boot
+                    👨‍💻 JavaScript, React.js, React Native, Redux, Next.js, Java
+                    Spring Boot, Microsoft SQL Server
                     <br />
-                    ⚙️ Agilité, Scrum, Jira, Git, Gitlab CI/CD, Apple Store,
-                    Huawei AppGallery, Google Play Store
+                    ⚙️ Git, Gitlab CI/CD, Apple Store, Huawei AppGallery, Google
+                    Play Store
                   </p>
                 </div>
               </div>
@@ -212,24 +245,32 @@ export default function Experience() {
 
                 <div className="ltr:float-left rtl:float-right text-start md:ms-8 mt-6 md:mt-0">
                   <h5 className="title mb-1 font-semibold">
-                    Développeur React / Node.js
+                    Développeur React.js / Node.js
                   </h5>
                   <p className="mt-3 mb-0 text-slate-400 text-[15px]">
-                    Lambdasoft développe RHAPI depuis 2016, une API capable de
-                    gérer la prise de rendez-vous et de coter les actes
-                    médicaux.
+                    Lambdasoft est un éditeur de logiciels spécialisé dans les
+                    services de la santé. Cette société développe et maintient
+                    RHAPI une API Rest capable de gérer un cabinet médical, de
+                    la prise de rendez-vous d’un patient jusqu’à la
+                    télétransmission de feuilles de soin électroniques à la
+                    sécurité sociale.
                   </p>
                   <p className="mt-3 mb-0 text-slate-400 text-[15px]">
                     💼 Missions :
                   </p>
                   <p className="mt-3 mb-0 text-slate-400 text-[15px]">
-                    ✅ Développement de services associés à des applications de
-                    santé
-                    <br />✅ Développement d'un outil de gestion d'agendas et de
-                    cabinets médicaux
+                    ✅ Développement d’une application de prise de rendez-vous
+                    en ligne
+                    <br />✅ Évolutions d’une application de gestion de cabinets
+                    médicaux
+                    <br />✅ Développement d’un service d’envoi de mails et SMS
+                    <br />✅ Édition et visualisation d’une feuille de soin
+                    électronique
+                    <br />✅ Développement d’un service de télétransmission
+                    d’une feuille de soins électronique à la sécurité sociale
                   </p>
                   <p className="mt-3 mb-0 text-slate-400 text-[15px]">
-                    👨‍💻 JavaScript, Node JS, React JS, Bash
+                    👨‍💻 JavaScript, React.js, Node.js, Express.js, Bash
                     <br />
                     ⚙️ Git, OVHCloud
                   </p>
