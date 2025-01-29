@@ -2,8 +2,6 @@
 import React from "react";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
-//import CountUp from "react-countup";
-//import Image from "next/image";
 
 export default function HeroOne() {
   return (
@@ -42,15 +40,14 @@ export default function HeroOne() {
                 <span
                   className="typewrite text-amber-500"
                   data-period="2000"
-                  data-type='[ "Dennis Scott", "Website Designer", "Web Developer", "UI/UX Designer" ]'
+                  data-type='[ "Divin NDAYISHIMA", "Web Developer", "Mobile Developer", "Software Engineer" ]'
                 >
                   {" "}
                   <span className="wrap"></span>{" "}
                 </span>
               </h4>
               <p className="text-slate-400 max-w-xl">
-                Je suis développeur Web et Mobile ayant accumulé plus de 5 ans
-                d'expérience et maîtrisant toutes les phases du développement.
+                  Développeur Web et Mobile, je conçois et optimise chaque étape du développement, de l’architecture au déploiement.
               </p>
 
               <div className="mt-6">
