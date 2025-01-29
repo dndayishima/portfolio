@@ -23,7 +23,7 @@ export default function AboutUs() {
               />
 
               <div className="absolute lg:bottom-20 md:bottom-10 bottom-6 ltr:lg:-right-16 rtl:lg:-left-16 ltr:md:-right-8 rtl:md:-left-8 ltr:right-0 rtl:left-0 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 m-3 w-44 text-center">
-                <h6 className="font-semibold">Dév React</h6>
+                <h6 className="font-semibold">React Expert</h6>
                 <span className="text-2xl font-medium text-amber-500 mb-0">
                   +
                 </span>
