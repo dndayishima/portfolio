@@ -8,7 +8,7 @@ export default function AddBanner() {
       <div className="container relative">
         <div className="grid grid-cols-1 text-center">
           <h3 className="mb-4 md:text-2xl text-xl text-white font-semibold">
-            Je suis freelance et j'aime le challenge
+            Je suis freelance et j&apos;aime le challenge
           </h3>
 
           <p className="text-white/80 max-w-xl mx-auto text-[15px]">
