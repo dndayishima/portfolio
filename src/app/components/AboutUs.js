@@ -3,7 +3,6 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { expertiseTechno } from "../Data/data";
-import CountUp from "react-countup";
 
 export default function AboutUs() {
   return (
@@ -27,17 +26,10 @@ export default function AboutUs() {
                 <h6 className="font-semibold">Dév React</h6>
                 <span className="text-2xl font-medium text-amber-500 mb-0">
                   +
-                  <span className="counter-value font-bold" data-target="7">
-                    <CountUp
-                      start={1}
-                      className="counter-value"
-                      end={5}
-                      duration={3}
-                    />
-                  </span>
                 </span>
                 <span className="text-sm text-slate-400">
-                  &nbsp; ans <br /> d'expérience
+                  <br />
+                  Maîtrise du Frontend
                 </span>
               </div>
             </div>
