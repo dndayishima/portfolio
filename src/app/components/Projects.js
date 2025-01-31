@@ -5,6 +5,11 @@ import * as Unicons from "@iconscout/react-unicons";
 import Lightbox from "react-18-image-lightbox";
 import "../../../node_modules/react-18-image-lightbox/style.css";
 import Image from "next/image";
+
+/**
+ * This component could be used in the future to show up some of the projects
+ * I worked on
+ */
 const images = [
   "/images/works/1.jpg",
   "/images/works/2.jpg",
