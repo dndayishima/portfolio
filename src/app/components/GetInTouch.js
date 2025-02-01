@@ -42,7 +42,7 @@ export default function GetInTouch() {
           </h3>
 
           <p className="text-slate-400 max-w-xl mx-auto text-[15px]">
-            N'hésitez pas à me contacter pour discuter de votre projet ou pour
+            N&apos;hésitez pas à me contacter pour discuter de votre projet ou pour
             toute autre question. Je suis toujours prêt à échanger et à
             collaborer.
           </p>
