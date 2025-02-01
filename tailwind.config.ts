@@ -1,7 +1,12 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from "tailwindcss";
+
+export default {
   mode: "jit",
-  content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   darkMode: "class",
   important: true,
   theme: {
@@ -33,7 +38,6 @@ module.exports = {
         black: "#161c2d",
         "dark-footer": "#192132",
       },
-
       boxShadow: {
         sm: "0 2px 4px 0 rgb(60 72 88 / 0.15)",
         DEFAULT: "0 0 3px rgb(60 72 88 / 0.15)",
@@ -44,18 +48,15 @@ module.exports = {
         inner: "inset 0 2px 4px 0 rgb(60 72 88 / 0.05)",
         testi: "2px 2px 2px -1px rgb(60 72 88 / 0.15)",
       },
-
       spacing: {
         0.75: "0.1875rem",
         3.25: "0.8125rem",
       },
-
-      maxWidth: ({ theme, breakpoints }) => ({
+      maxWidth: () => ({
         1200: "71.25rem",
         992: "60rem",
         768: "45rem",
       }),
-
       zIndex: {
         1: "1",
         2: "2",
@@ -64,5 +65,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss"), require("autoprefixer")],
-};
+  //plugins: [require("tailwindcss"), require("autoprefixer")], // TODO : verify if there is no way to use imports
+} satisfies Config;
