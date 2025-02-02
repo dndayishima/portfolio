@@ -95,7 +95,7 @@ export default function Switcher() {
             : "back-to-top fixed  text-lg rounded-full z-10 bottom-5 right-5 h-9 w-9 text-center bg-amber-500 text-white leading-9 flex items-center justify-center"
         }`}
       >
-        <Unicons.UilArrowUp width={18} />
+        <Unicons.UilArrowUp width={18} color="white"/>
       </Link>
     </>
   );

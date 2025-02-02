@@ -54,7 +54,7 @@ export default function Navbar() {
               >
                 <span className="login-btn-primary">
                   <span className="btn btn-icon btn-sm rounded-full bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white">
-                    <Unicons.UilLinkedin width={16} />
+                    <Unicons.UilLinkedin width={16} color="white"/>
                   </span>
                 </span>
                 <span className="login-btn-light">
