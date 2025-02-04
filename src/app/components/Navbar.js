@@ -9,9 +9,9 @@ export default function Navbar() {
   let [stickyNavbar, setstickyNavbar] = useState(false);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    //if (typeof window !== "undefined") {
       window.addEventListener("scroll", windowScroll);
-    }
+    //}
   });
 
   function windowScroll() {

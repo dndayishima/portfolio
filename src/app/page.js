@@ -14,10 +14,10 @@ const Switcher = dynamic(() => import("./components/Switcher"));
 
 export default function Index() {
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    //if (typeof window !== "undefined") {
       document.documentElement.setAttribute("dir", "ltr");
       document.documentElement.classList.add("light");
-    }
+    //}
   }, []);
   return (
     <>

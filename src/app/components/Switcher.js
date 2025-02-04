@@ -7,11 +7,11 @@ import * as Unicons from "@iconscout/react-unicons";
 export default function Switcher() {
   const [scrollToTops, setScrollToTops] = useState(false);
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    //if (typeof window !== "undefined") {
       window.addEventListener("scroll", () => {
         setScrollToTops(window.scrollY >= 500);
       });
-    }
+    //}
     window.scrollTo(0, 0);
   }, []);
   const scrollToTop = () => {
