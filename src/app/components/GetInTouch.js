@@ -48,7 +48,7 @@ export default function GetInTouch() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 md:grid-cols-2 mt-8 items-center gap-[30px]">
+        <div className="container mt-8">
           <div className="lg:col-span-8">
             <div className="p-6 rounded-md shadow bg-white dark:bg-slate-900">
               <form method="post" onSubmit={handleOnSubmit}>
@@ -119,58 +119,30 @@ export default function GetInTouch() {
               </form>
             </div>
           </div>
-
-          <div className="lg:col-span-4">
-            <div className="lg:ms-8">
-              <div className="flex">
-                <div className="icons text-center mx-auto">
-                  <Unicons.UilPhone className=" block rounded text-2xl dark:text-white mb-0" />
-                </div>
-
-                <div className="flex-1 ms-6">
-                  <h5 className="text-[17px] dark:text-white mb-2 font-medium">
-                    Téléphone
-                  </h5>
-                  <Link
-                    href="tel:+33603697507"
-                    className="text-slate-400 text-[15px]"
-                  >
-                    +33 6 03 69 75 07
-                  </Link>
-                </div>
+          
+          <div className="container mt-8 text-center">
+            <div className="mt-4">
+              <div className="ms-6">
+                <h5 className="text-[17px] dark:text-white mb-2 font-medium">
+                  Email
+                </h5>
+                <Link
+                  href="mailto:divin.ndayishima@outlook.com"
+                  className="text-slate-400 text-[15px]"
+                >
+                  divin.ndayishima@outlook.com
+                </Link>
               </div>
-
-              <div className="flex mt-4">
-                <div className="icons text-center mx-auto">
-                  <Unicons.UilEnvelope className=" block rounded text-2xl dark:text-white mb-0" />
-                </div>
-
-                <div className="flex-1 ms-6">
-                  <h5 className="text-[17px] dark:text-white mb-2 font-medium">
-                    Email
-                  </h5>
-                  <Link
-                    href="mailto:divin.ndayishima@outlook.com"
-                    className="text-slate-400 text-[15px]"
-                  >
-                    divin.ndayishima@outlook.com
-                  </Link>
-                </div>
-              </div>
-
-              <div className="flex mt-4">
-                <div className="icons text-center mx-auto">
-                  <Unicons.UilMapMarker className=" block rounded text-2xl dark:text-white mb-0" />
-                </div>
-
-                <div className="flex-1 ms-6">
-                  <h5 className="text-[17px] dark:text-white mb-2 font-medium">
-                    Localisation
-                  </h5>
-                  <p className="text-slate-400 text-[15px] mb-2">
-                    Paris, FRANCE
-                  </p>
-                </div>
+            </div>
+            
+            <div className="mt-4">
+              <div className="ms-6">
+                <h5 className="text-[17px] dark:text-white mb-2 font-medium">
+                  Localisation
+                </h5>
+                <p className="text-slate-400 text-[15px] mb-2">
+                  Paris, FRANCE
+                </p>
               </div>
             </div>
           </div>
