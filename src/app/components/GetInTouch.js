@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import * as Unicons from "@iconscout/react-unicons";
 
 export default function GetInTouch() {
   const [formStatus, setFormStatus] = useState(null);
