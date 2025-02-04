@@ -16,7 +16,7 @@ export default function Experience() {
           <p className="text-slate-400 max-w-xl mx-auto text-[15px]">
             Mon expérience professionnelle, source de ma motivation pour le
             développement, inclut une variété de projets passionnants. Découvrez
-            mes réalisations et mon engagement pour l'excellence dans le
+            mes réalisations et mon engagement pour l&apos;excellence dans le
             développement web et mobile.
           </p>
         </div>
@@ -52,9 +52,9 @@ export default function Experience() {
                     digitales sur-mesure à forte valeur ajoutée.
                   </p>
                   <p className="mt-3 mb-0 text-slate-400 text-[15px]">
-                    Chez ZOL, j'interviens en tant qu'expert React Native pour
-                    maintenir et faire évoluer l'application myR.A.S appartenant
-                    à R.A.S, un grand groupe d'intérim en France et au Maroc.
+                    Chez ZOL, j&apos;interviens en tant qu&apos;expert React Native pour
+                    maintenir et faire évoluer l&apos;application myR.A.S appartenant
+                    à R.A.S, un grand groupe d&apos;intérim en France et au Maroc.
                   </p>
                   <p className="mt-3 mb-0 text-slate-400 text-[15px]">
                     myR.A.S est une application qui est utilisée par les
@@ -62,7 +62,7 @@ export default function Experience() {
                     notamment :
                   </p>
                   <p className="mt-3 mb-0 text-slate-400 text-[15px]">
-                    - la mise à jour du profil d'un intérimaire
+                    - la mise à jour du profil d&apos;un intérimaire
                     <br />
                     - le renseignement des absences / disponibilités
                     <br />
@@ -129,7 +129,7 @@ export default function Experience() {
                     HomeServe est un groupe spécialisé dans les services pour la
                     maison, notamment l’installation, l’assistance et le
                     dépannage, ainsi que les réparations dans les domaines de la
-                    plomberie, de l'électricité, du chauffage, du gaz, de
+                    plomberie, de l&apos;électricité, du chauffage, du gaz, de
                     l’électroménager et des objets connectés.
                   </p>
                   <p className="mt-3 mb-0 text-slate-400 text-[15px]">

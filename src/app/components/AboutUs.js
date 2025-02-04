@@ -42,7 +42,7 @@ export default function AboutUs() {
               </h3>
 
               <p className="text-slate-400 max-w-xl text-[15px]">
-                Je suis un développeur JavaScript / TypeScript doté d'une
+                Je suis un développeur JavaScript / TypeScript doté d&apos;une
                 expertise robuste en React.js, React Native et Next.js.
                 <br />
                 Ma maîtrise de ces technologies me permet de créer des
@@ -57,7 +57,7 @@ export default function AboutUs() {
                 traduit par une capacité éprouvée à produire des résultats plus
                 que satisfaisants.
                 <br />
-                Chaque projet est pour moi l'occasion de déployer des solutions
+                Chaque projet est pour moi l&apos;occasion de déployer des solutions
                 techniques pointues pour répondre aux besoins spécifiques.
               </p>
 
