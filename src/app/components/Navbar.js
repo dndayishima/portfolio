@@ -53,12 +53,12 @@ export default function Navbar() {
                 target="_blank"
               >
                 <span className="login-btn-primary">
-                  <span className="btn btn-icon btn-sm rounded-full bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white">
-                    <Unicons.UilLinkedin width={16} color="white"/>
+                  <span className="btn btn-icon btn-sm rounded-full bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600">
+                    <Unicons.UilLinkedin width={16}/>
                   </span>
                 </span>
                 <span className="login-btn-light">
-                  <span className="btn btn-icon btn-sm rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700">
+                  <span className="btn btn-icon btn-sm rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-amber-500 dark:hover:bg-amber-600 hover:border-amber-500 dark:border-amber-500 dark:hover:amber-600">
                     <Unicons.UilLinkedin width={16} />
                   </span>
                 </span>
