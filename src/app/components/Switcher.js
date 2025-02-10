@@ -7,11 +7,11 @@ import * as Unicons from "@iconscout/react-unicons";
 export default function Switcher() {
   const [scrollToTops, setScrollToTops] = useState(false);
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    //if (typeof window !== "undefined") {
       window.addEventListener("scroll", () => {
         setScrollToTops(window.scrollY >= 500);
       });
-    }
+    //}
     window.scrollTo(0, 0);
   }, []);
   const scrollToTop = () => {
@@ -57,33 +57,18 @@ export default function Switcher() {
           >
             <Unicons.UilMoon
               width={18}
-              className="text-[20px] text-yellow-500"
+              className="text-[20px]"
+              color="rgb(234, 179, 8)"
             />
             <Unicons.UilSun
               width={18}
-              className="text-[20px] text-yellow-500"
+              className="text-[20px]"
+              color="rgb(234, 179, 8)"
             />
             <span className="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] w-7 h-7"></span>
           </label>
         </span>
       </div>
-
-      {/*<div className="fixed top-[40%] -right-3 z-50">
-        <Link href="#" id="switchRtl" className="cursor-pointer">
-          <span
-            className="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-semibold rtl:block ltr:hidden"
-            onClick={(event) => changeMode("layout", event)}
-          >
-            LTR
-          </span>
-          <span
-            className="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-semibold ltr:block rtl:hidden"
-            onClick={(event) => changeMode("layout", event)}
-          >
-            RTL
-          </span>
-        </Link>
-      </div>*/}
 
       <Link
         href="#"
@@ -95,7 +80,7 @@ export default function Switcher() {
             : "back-to-top fixed  text-lg rounded-full z-10 bottom-5 right-5 h-9 w-9 text-center bg-amber-500 text-white leading-9 flex items-center justify-center"
         }`}
       >
-        <Unicons.UilArrowUp width={18} />
+        <Unicons.UilArrowUp width={18} color="white"/>
       </Link>
     </>
   );

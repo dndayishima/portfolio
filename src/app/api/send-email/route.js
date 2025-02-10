@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
-
-const mail = require("@sendgrid/mail");
+import mail from "@sendgrid/mail";
 
 mail.setApiKey(process.env.SENDGRID_API_KEY || "");
 
